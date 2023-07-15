@@ -1,0 +1,28 @@
+1. To deploy Airflow on Docker Compose, you should fetch docker-compose.yaml. :
+
+(curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.3/docker-compose.yaml')
+OR
+(Invoke-WebRequest -Uri 'https://airflow.apache.org/docs/apache-airflow/2.6.3/docker-compose.yaml' -OutFile 'docker-compose.yaml')
+
+2. Setting the right Airflow user
+(mkdir -p ./dags ./logs ./plugins ./config)
+OR
+(New-Item -ItemType Directory -Force -Path './dags', './logs', './plugins', './config')
+
+3. Create an .env file in the same folder as docker-compose.yaml
+AIRFLOW_UID=50000
+
+4. Initialize the database
+(docker compose up airflow-init)
+ on success will show
+airflow-init_1       | Upgrades done
+airflow-init_1       | Admin user airflow created
+airflow-init_1       | 2.6.3
+start_airflow-init_1 exited with code 0
+
+5.Running Airflow
+(docker compose up) 
+
+6. open localhost http://localhost:8080/
+
+7. for more info can go to https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html
