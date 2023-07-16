@@ -1,0 +1,9 @@
+1. Download and Install Docker Desktop on Windows (https://docs.docker.com/desktop/install/windows-install/)
+
+2. Double-click Docker Desktop Installer.exe to run the installer.
+
+3. Enable the WSL 2 feature on Windows. For detailed instructions, refer to the Microsoft documentation. (https://learn.microsoft.com/en-us/windows/wsl/install)
+
+4. In powershell run (wsl --install), if already have then update it by (wsl --update)
+
+5. Open Docker
