@@ -1,0 +1,17 @@
+Step 1: Install Java 8
+
+Step 2: Install Python
+
+Step 3: Download Apache Spark
+
+Step 4: Verify Spark Software File
+
+Step 5: Install Apache Spark
+
+Step 6: Add winutils.exe File
+
+Step 7: Configure Environment Variables
+
+Step 8: Launch Spark
+
+Step 9: Test Spark
