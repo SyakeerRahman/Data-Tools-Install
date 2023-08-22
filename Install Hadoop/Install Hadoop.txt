@@ -1,0 +1,7 @@
+Installation links:
+
+1. Oracle VM Virtualbox: https://download.virtualbox.org/virtu...
+
+2. HDP Sandbox link: https://archive.cloudera.com/hwx-sand...
+
+3. HDP Sandbox installation guide: https://www.cloudera.com/tutorials/sandbox-deployment-and-install-guide/1.html
